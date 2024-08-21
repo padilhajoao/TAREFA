@@ -1,0 +1,30 @@
+@baseUrl = https://8080-padilhajoao-tarefa-ytng9vvxd37.ws-us115.gitpod.io
+
+###
+
+GET {{baseUrl}}/tarefas
+
+###
+
+POST {{baseUrl}}/tarefas
+Content-Type: application/json
+
+{
+    "descricao": "Joao Pedro",
+    "concluido": false
+}
+
+###
+GET {{baseUrl}}/tarefas/2
+
+###
+PUT {{baseUrl}}/tarefas/3
+Content-Type: application/json
+
+{
+    "descricao": "Descrição de teste",
+    "concluido": true
+}
+
+###
+DELETE {{baseUrl}}/tarefas/2
